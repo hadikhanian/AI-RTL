@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "AI RTL",
+    "version": "5.0",
+    "description": "RTL alignment & Vazir font for AI Chats.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "ai-rtl@firefox-extension",
+            "strict_min_version": "57.0"
+        }
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://chatgpt.com/*",
+                "*://claude.ai/*",
+                "*://grok.x.ai/*",
+                "*://x.com/*",
+                "*://chat.deepseek.com/*",
+                "*://gemini.google.com/*",
+                "*://aistudio.google.com/*"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        "Vazir.woff2",
+        "icon.png"
+    ]
+}
