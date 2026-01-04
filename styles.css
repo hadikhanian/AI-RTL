@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'VazirLocal';
+    src: url('chrome-extension://__MSG_@@extension_id__/Vazir.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-icons,
+.material-symbols-outlined,
+.material-symbols-rounded,
+.google-symbols,
+mat-icon,
+i,
+svg,
+svg *,
+.goog-icon,
+[class*="icon"],
+[class*="Icon"] {
+    font-family: 'Google Material Icons', 'Material Icons', 'Material Symbols Outlined', inherit !important;
+    direction: ltr !important;
+    text-transform: none !important;
+    white-space: nowrap !important;
+}
+
+body, 
+p, 
+h1, h2, h3, h4, h5, h6, 
+li, 
+textarea, 
+input, 
+blockquote, 
+strong, 
+b, 
+td, 
+th,
+header,
+header *,
+mat-toolbar,
+mat-toolbar *,
+.conversation-title,
+.title,
+[class*="title"],
+.prose,
+.markdown,
+nav, 
+aside, 
+.sidebar,
+[class*="sidebar"],
+mat-sidenav,
+div[data-testid*="history"],
+a {
+    font-family: 'VazirLocal', 'Vazirmatn', 'Tahoma', sans-serif !important;
+}
+
+textarea, 
+input[type="text"], 
+div[role="textbox"], 
+div[contenteditable="true"] p,
+.ProseMirror {
+    direction: rtl !important;
+    text-align: right !important;
+    font-family: 'VazirLocal', sans-serif !important;
+}
+
+.markdown p, .markdown ul, .markdown ol, .markdown li {
+    direction: rtl !important;
+    text-align: right !important;
+    unicode-bidi: embed !important;
+}
+
+ms-text-chunk, .text-chunk, .model-response-text, .turn-content,
+.message-content, app-message-content, .message-body {
+    direction: rtl !important;
+    text-align: right !important;
+    display: block !important;
+}
+
+.font-claude-message, .font-claude-message p {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+nav a, 
+nav div, 
+aside div, 
+.mat-list-item-content {
+    text-align: right;
+}
+
+pre, code, .hljs, .code-block, pre *, code *, .code-block *,
+.mat-mdc-chip, span[class*="code"], div[class*="code-block"] {
+    direction: ltr !important;
+    text-align: left !important;
+    font-family: 'Consolas', 'Monaco', monospace !important;
+    unicode-bidi: embed !important;
+}
+
+ul, ol {
+    direction: rtl !important;
+    text-align: right !important;
+    padding-right: 20px !important;
+    padding-left: 0 !important;
+}
+
+table {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+p, li, span {
+    unicode-bidi: embed !important;
+}
